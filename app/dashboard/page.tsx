@@ -1,7 +1,7 @@
 "use client";
 import Sidebar from "@/components/Sidebar";
 import { RequireAuth, useAuth } from "@/lib/auth-context";
-import { listCompanies, listDeadlines } from "@/lib/firestore";
+import { listCompanies, listDeadlines } from "@/lib/database";
 import { useEffect, useState } from "react";
 
 function Content() {
