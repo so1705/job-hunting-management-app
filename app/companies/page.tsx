@@ -1,3 +1,8 @@
+type CompanyForm = Omit<Company, "userId" | "createdAt">;
+
+const initial: CompanyForm = { ... }
+
+const [form, setForm] = useState<CompanyForm>(initial);
 "use client";
 import Link from "next/link";
 import Sidebar from "@/components/Sidebar";
